@@ -21,10 +21,14 @@
     ;; long names for readability in this section
     tap-repress-timeout 0
     tap-hold-timeout 170
+    tap-dance-step-timeout 150
+    tap-dance-step-timeout-for-single-finger 250
 
     ;; some short names for reuse in the rest of the config
     trt $tap-repress-timeout
     tht $tap-hold-timeout
+    tdst $tap-dance-step-timeout
+    tdst_single-finger $tap-dance-step-timeout-for-single-finger
 )
 
 
@@ -34,72 +38,102 @@
     ;; to be kept in sync with my shortcuts.json
     ;;;;;;;;;;;;;
 
-    ;; TODO temporary
+    
+    vsc_goto-previous-problem (push-msg "vscode:problem:previous")
+    vsc_goto-next-problem (push-msg "vscode:problem:next")
+
     vsc_cursor_up40 (push-msg "vscode:cursor:up:40")
     vsc_cursor_down40 (push-msg "vscode:cursor:down:40")
-    vsc_focus-folder-view (push-msg "vscode:focus:fileView")
+    vsc_cursor_up20 (push-msg "vscode:cursor:up:20")
+    vsc_cursor_down20 (push-msg "vscode:cursor:down:20")
+    vsc_cursor_up10 (push-msg "vscode:cursor:up:10")
+    vsc_cursor_down10 (push-msg "vscode:cursor:down:10")
 
-    #|
-    vsc_goto-previous-problem TODO
-    vsc_goto-next-problem TODO
+    vsc_cursor_up (push-msg "vscode:cursor:up:1")
+    vsc_cursor_down (push-msg "vscode:cursor:down:1")
+    vsc_cursor_left (push-msg "vscode:cursor:left:1")
+    vsc_cursor_right (push-msg "vscode:cursor:right:1")
 
-    vsc_cursor_up40 TODO
-    vsc_cursor_down40 TODO
-    vsc_cursor_up20 TODO
-    vsc_cursor_down20 TODO
-    vsc_cursor_up10 TODO
-    vsc_cursor_down10 TODO
+    vsc_cursor_home (push-msg "vscode:cursor:home")
+    vsc_cursor_end (push-msg "vscode:cursor:end")
 
-    vsc_cursor_up TODO
-    vsc_cursor_down TODO
-    vsc_cursor_left TODO
-    vsc_cursor_right TODO
-    vsc_cursor_home TODO
-    vsc_cursor_end TODO
+    vsc_goto-definition (push-msg "vscode:go-to-definition")
+    vsc_focus-breadcrumbs (push-msg "vscode:focus-breadcrumbs")
+    vsc_preview-definition (push-msg "vscode:preview-definition")
+    vsc_rust_open-docs (push-msg "vscode:rust:open-external-docs")
 
-    vsc_goto-definition TODO
-    vsc_focus-breadcrumbs TODO
-    vsc_preview-definition TODO
-    vsc_rust_open-docs TODO
-
-    vsc_toggle-fullscreen TODO
-    vsc_toggle-centered-layout TODO
+    vsc_toggle-fullscreen (push-msg "vscode:toggle-fullscreen")
+    vsc_toggle-centered-layout (push-msg "vscode:toggle-centered-layout")
     
-    vsc_create-new-terminal TODO
-    vsc_reopen-closed-editor TODO
-    vsc_close-active-editor TODO
+    vsc_create-new-terminal (push-msg "vscode:create-new-terminal")
+    vsc_reopen-closed-editor (push-msg "vscode:reopen-closed-editor")
+    vsc_close-active-editor (push-msg "vscode:close-active-editor")
 
     ;; E is short for editor, T is short for terminal
     ;; Generally "ET" is short for "editor or terminal, depending on context".
-    vsc_unsplit-ET-into-next-group TODO
-    vsc_split-ET-into-right-group TODO
-    vsc_previous-ET-in-group TODO
-    vsc_next-ET-in-group TODO
-    vsc_focus-left-ET-group TODO
-    vsc_focus-right-ET-group TODO
+    ;; DEPRECATED(this is basically just a move??) vsc_unsplit-ET-into-next-group (push-msg "vscode:unsplit-editor-or-terminal-into-next-group")
+    vsc_split-ET-into-right-group (push-msg "vscode:split-editor-or-terminal-into-right-group")
+    vsc_previous-ET-in-group (push-msg "vscode:focus:previous-editor-or-terminal-in-group")
+    vsc_next-ET-in-group (push-msg "vscode:focus:next-editor-or-terminal-in-group")
+    vsc_focus-left-ET-group (push-msg "vscode:focus:left-editor-or-terminal-group")
+    vsc_focus-right-ET-group (push-msg "vscode:focus:right-editor-or-terminal-group")
 
-    vsc_focus-active-text-editor TODO
-    vsc_focus-terminal TODO
-    vsc_focus-folder-view TODO
-    vsc_toggle-maximize-editor-group TODO
+    vsc_focus-active-text-editor (push-msg "vscode:focus:active-text-editor")
+    vsc_focus-terminal (push-msg "vscode:focus:terminal-panel")
+    vsc_focus-folder-view (push-msg "vscode:focus:file-panel")
+    vsc_toggle-maximize-editor-group (push-msg "vscode:toggle-maximize-editor-group")
 
-    vsc_move-terminal-to-editor TODO
-    vsc_move-terminal-to-panel TODO
+    vsc_move-terminal-to-editor (push-msg "vscode:move:terminal-to-editor")
+    vsc_move-terminal-to-panel (push-msg "vscode:move:terminal-to-panel")
 
-    vsc_move-editor-into-left-group TODO
-    vsc_move-editor-into-right-group TODO
-    |#
+    vsc_move-editor-into-left-group (push-msg "vscode:move:editor-into-left-group")
+    vsc_move-editor-into-right-group (push-msg "vscode:move:editor-into-right-group")
+    
+    vsc_toggle-terminal-visibility (push-msg "TODO")
+    vsc_toggle-right-sidebar-visibility (push-msg "TODO")
 
+
+    ;;;;;;;;;;;;;
+    ;; Common symbols
+    ;;;;;;;;;;;;;
+    sym_grave-accent (unicode "`")
+    sym_hashtag (unicode "#")
+    sym_mult (unicode "*")
+    sym_fslash (unicode "/")
+    sym_and (unicode "&")
+    sym_lt (unicode "<")
+    sym_gt (unicode ">")
+    sym_minus (unicode "-")
+    sym_colon (unicode ":")
+    sym_at (unicode "@")
+    sym_bslash (unicode "\")
+    sym_eq (unicode "=")
+    sym_lsb (unicode "[")
+    sym_rsb (unicode "]")
+    sym_not (unicode "!")
+    sym_lpar (unicode "(")
+    sym_rpar (unicode ")")
+    sym_scolon (unicode ";")
+    sym_plus (unicode "+")
+    sym_undsc (unicode "_")
+    sym_pipe (unicode "|")
+    sym_mod (unicode "%")
+    sym_dquot (unicode r#"""#)
+    sym_squot (unicode "'")
+    sym_lcurb (unicode "{")
+    sym_rcurb (unicode "}")
+    sym_comma (unicode ",")
+    sym_dot (unicode ".")
 
     ;;;;;;;;;;;;;
     ;; Holds
     ;;;;;;;;;;;;;
-    ;; TODO h_a (layer-while-held l_symbols)
+    h_a (layer-while-held l_symbols)
     h_s (layer-while-held l_programming)
     h_d (layer-while-held l_editor-navigation)
     ;; TODO make this conditional only on above layer
-    ;; TODO h_c (layer-while-held l_editor-navigation_moves)
-    ;; TODO h_ž (layer-while-held l_symbols)
+    h_v (layer-while-held l_editor-navigation_moves)
+    h_ž (layer-while-held l_symbols)
     h_caps (layer-while-held l_system)
 
 
@@ -107,11 +141,16 @@
     ;; Tap-holds
     ;;;;;;;;;;;;;
     th_esc (tap-hold-release $trt $tht caps @h_caps)
-    ;; TODO th_a (tap-hold $trt $tht a @h_a)
+    th_a (tap-hold $trt $tht a @h_a)
     th_s (tap-hold $trt $tht s @h_s)
     th_d (tap-hold $trt $tht d @h_d)
-    ;; TODO th_c (tap-hold $trt $tht c @h_c)
-    ;; TODO th_ž (tap-hold $trt $tht bksl @h_ž)
+    th_v (tap-hold $trt $tht v @h_v)
+    th_ž (tap-hold $trt $tht bksl @h_ž)
+
+    ;;;;;;;;;;;;;
+    ;; Tap-dances
+    ;;;;;;;;;;;;;
+    td_vsc-preview-or-open-docs (tap-dance-eager $tdst_single-finger (@vsc_preview-definition @vsc_rust_open-docs))
 
 
     ;;;;;;;;;;;;;
@@ -140,15 +179,17 @@
 ;;     _ _ _   _   _ _ _ _
 ;; )
 
+
 (deflayer l_base
     @th_esc
     _   _ _ _ _ _ _ _ _ _ _ _ _  _
     _   _ _ _ _ _ _ _ _ _ _ _ _   _
-    esc   _ @th_s @th_d _ _ _ _ _ _ _ _ _
+    esc   @th_a @th_s @th_d _ _ _ _ _ _ _ _ @th_ž
     _   _ _ _ _ _ _ _ _ _ _  _
     _ _ _   _   _ _ _ _
 )
 
+;; DONE
 (deflayer l_system
     _
     _   _ _ _ _ _ _ _ _ _ _ _ _  _
@@ -158,20 +199,42 @@
     _ _ _   _   _ _ _ _
 )
 
+;; DONE
 (deflayer l_programming
     _
-    _   _ _ _ _ _ _ _ _ _ _ _ _  _
-    _   _ _ _ _ _ _ _ @vsc_cursor_up40 _ _ _ _   _
-    _   _ _ _ _ _ _ @vsc_cursor_down40 _ _ _ _ _
-    _   _ _ _ _ _ _ _ _ _ _      _
+    _   _ _ _ _ _ _ _ _ _ @vsc_goto-previous-problem @vsc_goto-next-problem home  _
+    _   _ _ lctrl lshift _ _ _ @vsc_cursor_up40 @vsc_cursor_up20 @vsc_cursor_up10 up end   _
+    _   _ XX esc _ _ _ @vsc_cursor_down40 @vsc_cursor_down20 @vsc_cursor_down10 left down rght
+    _   _ _ _ _ _ _ _ @vsc_goto-definition @vsc_focus-breadcrumbs @td_vsc-preview-or-open-docs      _
     _ _ _   _   _ _ _ _
 )
 
+;; DONE
 (deflayer l_editor-navigation
     _
+    _   _ _ _ _ _ _ _ @vsc_toggle-fullscreen @vsc_toggle-centered-layout @vsc_create-new-terminal @vsc_reopen-closed-editor @vsc_close-active-editor  _
+    _   _ _ _ _ _ _ _ _ _ _ @vsc_previous-ET-in-group @vsc_split-ET-into-right-group   _
+    _   _ _ _ _ _ _ _ _ @vsc_focus-active-text-editor @vsc_focus-left-ET-group @vsc_next-ET-in-group @vsc_focus-right-ET-group
+    _   _ _ _ @th_v _ _ _ @vsc_focus-terminal @vsc_focus-folder-view @vsc_toggle-maximize-editor-group      _
+    _ _ _   _   _ _ _ _
+)
+
+;; DONE 
+(deflayer l_editor-navigation_moves
+    _
     _   _ _ _ _ _ _ _ _ _ _ _ _  _
-    _   _ _ _ _ _ _ _ _ _ _ _ _   _
-    _   _ _ _ _ _ _ _ _ _ _ _ _
-    _   _ _ _ _ _ _ _ _ @vsc_focus-folder-view _      _
+    _   _ _ _ _ _ _ _ _ _ _ @vsc_move-terminal-to-editor _   _
+    _   _ _ _ _ _ _ _ _ _ @vsc_move-editor-into-left-group @vsc_move-terminal-to-panel @vsc_move-editor-into-right-group
+    _   _ _ _ _ _ _ _ @vsc_toggle-terminal-visibility @vsc_toggle-right-sidebar-visibility _      _
+    _ _ _   _   _ _ _ _
+)
+
+;; DONE
+(deflayer l_symbols
+    _
+    _   _ _ _ S-4 _ _ _ _ _ left _ @sym_at  _
+    _   @sym_grave-accent @sym_hashtag @sym_mult @sym_fslash @sym_and @sym_lt @sym_minus @sym_gt @sym_colon rght _ _   _
+    _   XX _ @sym_bslash @sym_eq @sym_lsb @sym_not @sym_rpar @sym_lpar @sym_scolon @sym_plus @sym_undsc XX
+    _   @sym_pipe @sym_mod @sym_dquot @sym_squot @sym_rsb @sym_rcurb @sym_lcurb @sym_comma @sym_dot @sym_minus      _
     _ _ _   _   _ _ _ _
 )

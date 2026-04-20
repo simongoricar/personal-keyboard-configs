@@ -1,0 +1,362 @@
+[
+  {
+    "author": "Simon Goričar",
+    "backcolor": "#49453eff",
+    "name": "Base ISO 100% layout (Logitech G213 Slovenian)"
+  },
+  [
+    {
+      "c": "#4c4b4a",
+      "t": "#ebdbb2"
+    },
+    "Caps Lock",
+    {
+      "x": 1,
+      "c": "#2b2928"
+    },
+    "F1",
+    "F2",
+    "F3",
+    "F4",
+    {
+      "x": 0.5
+    },
+    "F5",
+    "F6",
+    "F7",
+    "F8",
+    {
+      "x": 0.5
+    },
+    "F9",
+    "F10",
+    "F11",
+    "F12",
+    {
+      "x": 0.25
+    },
+    "PrtSc",
+    "Scroll Lock",
+    "Pause\nBreak",
+    {
+      "x": 0.25,
+      "c": "#cccccc",
+      "t": "#1f4500",
+      "ta": "#f7e9a1\n#ffffff\n\n\n\n\n#b9ae96",
+      "a": 5,
+      "f": 1.5,
+      "w": 4,
+      "h": 1.5,
+      "d": true
+    },
+    "Light yellow front labels denote active binds with special trigger conditions on the key.\nE means editor, T means terminal.\n\n\n\n\nGray-brown front labels simply denote keys that would otherwise be there (for easier reading)."
+  ],
+  [
+    {
+      "y": 0.5,
+      "c": "#2b2928",
+      "t": "#ebdbb2",
+      "ta": "",
+      "a": 4,
+      "f": 3
+    },
+    "\n\n\n \n\n\n\n\n~\n\n`",
+    "!\n1\n\n~",
+    "\"\n2\n\nˇ",
+    "#\n3\n\n^",
+    "$\n4",
+    "%\n5",
+    "^\n6",
+    "&\n7",
+    {
+      "c": "#483a13",
+      "ta": "\n\n\n\n#7a7569",
+      "a": 0,
+      "f": 1
+    },
+    "Toggle fullscreen\n\n\n\n8",
+    "Toggle centered layout\n\n\n\n9",
+    "Create new terminal\n\n\n\n0",
+    "Reopen closed editor\n\n\n\n?",
+    "Close active editor\n\n\n\n*",
+    {
+      "c": "#222222",
+      "ta": "",
+      "a": 4,
+      "f": 3,
+      "w": 2
+    },
+    "Backspace",
+    {
+      "x": 0.25,
+      "c": "#2b2928"
+    },
+    "Insert",
+    "Home",
+    "PgUp",
+    {
+      "x": 0.25
+    },
+    "Num Lock",
+    "/",
+    "*",
+    "-"
+  ],
+  [
+    {
+      "c": "#222222",
+      "w": 1.5
+    },
+    "Tab",
+    {
+      "c": "#2b2928"
+    },
+    "Q",
+    "W",
+    "E",
+    "R",
+    "T",
+    "Y\n\n\nZ",
+    "U",
+    "I",
+    "O",
+    "P",
+    {
+      "c": "#483a13",
+      "ta": "\n\n\n\n#7a7569",
+      "a": 0,
+      "f": 1
+    },
+    "Previous E/T in group ↑\n\n\n\nŠ",
+    "Split E/T<br>into right\n\n\n\nĐ",
+    {
+      "x": 0.25,
+      "c": "#222222",
+      "ta": "",
+      "a": 4,
+      "f": 3,
+      "w": 1.25,
+      "h": 2,
+      "w2": 1.5,
+      "h2": 1,
+      "x2": -0.25
+    },
+    "Enter",
+    {
+      "x": 0.25,
+      "c": "#2b2928"
+    },
+    "Delete",
+    "End",
+    "PgDn",
+    {
+      "x": 0.25
+    },
+    "7\nHome",
+    "8\n↑",
+    "9\nPgUp",
+    {
+      "c": "#222222",
+      "h": 2
+    },
+    "+"
+  ],
+  [
+    {
+      "c": "#4c4b4a",
+      "w": 1.55,
+      "w2": 1.75
+    },
+    "Esc",
+    {
+      "x": 0.2,
+      "c": "#2b2928"
+    },
+    "A",
+    "S",
+    {
+      "c": "#4c4b4a",
+      "ta": "\n#deac21\n\n\n\n#00ff08",
+      "g": true,
+      "a": 0,
+      "f": 2,
+      "fa": [
+        3,
+        1
+      ]
+    },
+    "D\nEdit. nav. layer\n\n\n\nHELD",
+    {
+      "c": "#2b2928",
+      "ta": "",
+      "g": false,
+      "a": 4,
+      "f": 3,
+      "fa": [],
+      "n": true
+    },
+    "F",
+    "G",
+    "H",
+    {
+      "n": true
+    },
+    "J",
+    "K",
+    {
+      "c": "#483a13",
+      "f": 1
+    },
+    "Focus active text editor",
+    {
+      "ta": "\n\n\n\n#7a7569",
+      "a": 0
+    },
+    "Focus < E/T group\n\n\n\nČ",
+    "Next E/T in group ↓\n\n\n\nĆ",
+    "Focus > E/T group\n\n\n\nŽ",
+    {
+      "x": 4.75,
+      "c": "#2b2928",
+      "ta": "",
+      "a": 4,
+      "f": 3
+    },
+    "4\n←",
+    "5",
+    "6\n→"
+  ],
+  [
+    {
+      "c": "#222222",
+      "w": 2.25
+    },
+    "Shift",
+    {
+      "c": "#2b2928"
+    },
+    "Z\n\n\nY",
+    "X",
+    "C",
+    {
+      "c": "#3b2f10",
+      "ta": "\n#de7921\n\n\n\n#b0aa99",
+      "a": 0,
+      "f": 1,
+      "fa": [
+        3
+      ]
+    },
+    "V\nAlt sub-layer\n\n\n\n<i>T-H</i>",
+    {
+      "c": "#2b2928",
+      "ta": "",
+      "a": 4,
+      "f": 3,
+      "fa": []
+    },
+    "B\n\n\n{",
+    "N\n\n\n}",
+    "M\n\n\n§",
+    {
+      "c": "#483a13",
+      "f": 1
+    },
+    "Focus terminal",
+    "Focus folder view",
+    {
+      "ta": "\n\n\n\n#7a7569",
+      "a": 0
+    },
+    "Toggle maximize group\n\n\n\n_",
+    {
+      "c": "#222222",
+      "ta": "",
+      "a": 4,
+      "f": 3,
+      "w": 2.75
+    },
+    "Shift",
+    {
+      "x": 1.25,
+      "c": "#2b2928"
+    },
+    "↑",
+    {
+      "x": 1.25
+    },
+    "1\nEnd",
+    "2\n↓",
+    "3\nPgDn",
+    {
+      "c": "#222222",
+      "h": 2
+    },
+    "Enter"
+  ],
+  [
+    {
+      "w": 1.25
+    },
+    "Ctrl",
+    {
+      "w": 1.25
+    },
+    "Win",
+    {
+      "w": 1.25
+    },
+    "Alt",
+    {
+      "c": "#2b2928",
+      "t": "#deac22",
+      "a": 5,
+      "f": 4,
+      "fa": [
+        0,
+        5
+      ],
+      "w": 6.25,
+      "d": true
+    },
+    "\nEditor Navigation Layer\n\n\n(editor section navigation + focus puller + splits + sub-layer access)",
+    {
+      "c": "#222222",
+      "t": "#ebdbb2",
+      "a": 4,
+      "f": 3,
+      "fa": [],
+      "w": 1.25
+    },
+    "AltGr",
+    {
+      "w": 1.25
+    },
+    "Win",
+    {
+      "w": 1.25
+    },
+    "Menu",
+    {
+      "w": 1.25
+    },
+    "Ctrl",
+    {
+      "x": 0.25,
+      "c": "#2b2928"
+    },
+    "←",
+    "↓",
+    "→",
+    {
+      "x": 0.25,
+      "c": "#222222",
+      "w": 2
+    },
+    "0\nIns",
+    {
+      "c": "#2b2928"
+    },
+    ".\nDel"
+  ]
+]

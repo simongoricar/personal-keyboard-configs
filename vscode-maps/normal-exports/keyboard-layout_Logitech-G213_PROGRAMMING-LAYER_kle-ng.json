@@ -1,0 +1,374 @@
+[
+  {
+    "author": "Simon Goričar",
+    "backcolor": "#49453eff",
+    "name": "Base ISO 100% layout (Logitech G213 Slovenian)",
+    "notes": "Specials keys:\n\n\"tap-tap: 🌐\": double-tapping will open the Rust documentation"
+  },
+  [
+    {
+      "c": "#4c4b4a",
+      "t": "#ebdbb2"
+    },
+    "Caps Lock",
+    {
+      "x": 1,
+      "c": "#2b2928"
+    },
+    "F1",
+    "F2",
+    "F3",
+    "F4",
+    {
+      "x": 0.5
+    },
+    "F5",
+    "F6",
+    "F7",
+    "F8",
+    {
+      "x": 0.5
+    },
+    "F9",
+    "F10",
+    "F11",
+    "F12",
+    {
+      "x": 0.25
+    },
+    "PrtSc",
+    "Scroll Lock",
+    "Pause\nBreak",
+    {
+      "x": 0.25,
+      "c": "#cccccc",
+      "t": "#1f4500",
+      "ta": "#f7e9a1\n\n\n\n\n\n#8ea64b",
+      "a": 5,
+      "f": 1.5,
+      "w": 4,
+      "h": 1.5,
+      "d": true
+    },
+    "Light yellow front labels denote active binds with special trigger conditions on the key.\n\n\n\n\n\nGray-green front labels simply denote keys that would otherwise be there (for easier reading)."
+  ],
+  [
+    {
+      "y": 0.5,
+      "c": "#2b2928",
+      "t": "#ebdbb2",
+      "ta": "",
+      "a": 4,
+      "f": 3
+    },
+    "\n\n\n \n\n\n\n\n~\n\n`",
+    "!\n1\n\n~",
+    "\"\n2\n\nˇ",
+    "#\n3\n\n^",
+    "$\n4",
+    "%\n5",
+    "^\n6",
+    "&\n7",
+    "*\n8",
+    "(\n9",
+    {
+      "c": "#4e5930",
+      "ta": "\n\n\n\n#707563",
+      "a": 0,
+      "f": 1
+    },
+    "Go to previous problem\n\n\n\n0",
+    "Go to next problem\n\n\n\n_",
+    {
+      "ta": "",
+      "a": 4,
+      "f": 3
+    },
+    "Home",
+    {
+      "c": "#222222",
+      "w": 2
+    },
+    "Backspace",
+    {
+      "x": 0.25,
+      "c": "#2b2928"
+    },
+    "Insert",
+    "Home",
+    "PgUp",
+    {
+      "x": 0.25
+    },
+    "Num Lock",
+    "/",
+    "*",
+    "-"
+  ],
+  [
+    {
+      "c": "#222222",
+      "w": 1.5
+    },
+    "Tab",
+    {
+      "c": "#2b2928"
+    },
+    "Q",
+    "W",
+    {
+      "c": "#4e5930",
+      "ta": "\n\n\n\n#707563",
+      "a": 0,
+      "f": 1.5,
+      "fa": [
+        3
+      ]
+    },
+    "Ctrl\n\n\n\nE",
+    "Shift\n\n\n\nR",
+    {
+      "c": "#2b2928",
+      "ta": "",
+      "a": 4,
+      "f": 3,
+      "fa": []
+    },
+    "T",
+    "Y\n\n\nZ",
+    "U",
+    {
+      "c": "#4e5930",
+      "ta": "\n\n\n\n#717663",
+      "a": 0,
+      "f": 1.5
+    },
+    "Cursor up 40 lines\n\n\n\nI",
+    "Cursor up 20 lines\n\n\n\nO",
+    "Cursor up 10 lines\n\n\n\nP",
+    {
+      "f": 3
+    },
+    "↑\n\n\n\nŠ",
+    "End\n\n\n\nĐ",
+    {
+      "x": 0.25,
+      "c": "#222222",
+      "ta": "",
+      "a": 4,
+      "w": 1.25,
+      "h": 2,
+      "w2": 1.5,
+      "h2": 1,
+      "x2": -0.25
+    },
+    "Enter",
+    {
+      "x": 0.25,
+      "c": "#2b2928"
+    },
+    "Delete",
+    "End",
+    "PgDn",
+    {
+      "x": 0.25
+    },
+    "7\nHome",
+    "8\n↑",
+    "9\nPgUp",
+    {
+      "c": "#222222",
+      "h": 2
+    },
+    "+"
+  ],
+  [
+    {
+      "c": "#4c4b4a",
+      "w": 1.55,
+      "w2": 1.75
+    },
+    "Esc",
+    {
+      "x": 0.2,
+      "c": "#2b2928"
+    },
+    "A",
+    {
+      "c": "#4c4b4a",
+      "ta": "\n#80de33\n\n\n\n#00ff08",
+      "g": true,
+      "a": 0,
+      "f": 2,
+      "fa": [
+        3,
+        1
+      ]
+    },
+    "S\nProg. layer\n\n\n\nHELD",
+    {
+      "c": "#4e5930",
+      "ta": "\n\n\n\n#707564",
+      "g": false,
+      "f": 3,
+      "fa": []
+    },
+    "Esc\n\n\n\nD",
+    {
+      "c": "#2b2928",
+      "ta": "",
+      "a": 4,
+      "n": true
+    },
+    "F",
+    "G",
+    "H",
+    {
+      "c": "#4e5930",
+      "ta": "\n\n\n\n#717663",
+      "a": 0,
+      "f": 1.5,
+      "n": true
+    },
+    "Cursor down 40 lines\n\n\n\nJ",
+    "Cursor down 20 lines\n\n\n\nK",
+    "Cursor down 10 lines\n\n\n\nL",
+    {
+      "f": 3
+    },
+    "←\n\n\n\nČ",
+    "↓\n\n\n\nĆ",
+    "→\n\n\n\nŽ",
+    {
+      "x": 4.75,
+      "c": "#2b2928",
+      "ta": "",
+      "a": 4
+    },
+    "4\n←",
+    "5",
+    "6\n→"
+  ],
+  [
+    {
+      "c": "#222222",
+      "w": 2.25
+    },
+    "Shift",
+    {
+      "c": "#2b2928"
+    },
+    "Z\n\n\nY",
+    "X",
+    "C",
+    "V\n\n\n@",
+    "B\n\n\n{",
+    "N\n\n\n}",
+    "M\n\n\n§",
+    {
+      "c": "#4e5930",
+      "ta": "\n\n\n\n#707563",
+      "a": 0,
+      "f": 1.5
+    },
+    "Go to def- -inition\n\n\n\n<",
+    "Focus bread- -crumbs\n\n\n\n>",
+    {
+      "ta": "",
+      "f": 1,
+      "fa": [
+        1.5
+      ]
+    },
+    "Preview def- -inition\n\n\n\ntap-tap: WEB",
+    {
+      "c": "#222222",
+      "a": 4,
+      "f": 3,
+      "fa": [],
+      "w": 2.75
+    },
+    "Shift",
+    {
+      "x": 1.25,
+      "c": "#2b2928"
+    },
+    "↑",
+    {
+      "x": 1.25
+    },
+    "1\nEnd",
+    "2\n↓",
+    "3\nPgDn",
+    {
+      "c": "#222222",
+      "h": 2
+    },
+    "Enter"
+  ],
+  [
+    {
+      "w": 1.25
+    },
+    "Ctrl",
+    {
+      "w": 1.25
+    },
+    "Win",
+    {
+      "w": 1.25
+    },
+    "Alt",
+    {
+      "c": "#593e30",
+      "t": "#7fde32",
+      "a": 5,
+      "f": 4,
+      "fa": [
+        0,
+        5
+      ],
+      "w": 6.25,
+      "d": true
+    },
+    "\nProgramming Layer\n\n\n(VSCode text editor movement, code navigation, assists)",
+    {
+      "c": "#222222",
+      "t": "#ebdbb2",
+      "a": 4,
+      "f": 3,
+      "fa": [],
+      "w": 1.25
+    },
+    "AltGr",
+    {
+      "w": 1.25
+    },
+    "Win",
+    {
+      "w": 1.25
+    },
+    "Menu",
+    {
+      "w": 1.25
+    },
+    "Ctrl",
+    {
+      "x": 0.25,
+      "c": "#2b2928"
+    },
+    "←",
+    "↓",
+    "→",
+    {
+      "x": 0.25,
+      "c": "#222222",
+      "w": 2
+    },
+    "0\nIns",
+    {
+      "c": "#2b2928"
+    },
+    ".\nDel"
+  ]
+]

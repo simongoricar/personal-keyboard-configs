@@ -1,0 +1,64 @@
+{
+  "name": "Gruvbox (dark)",
+  "backgroundColor": "#a89984",
+  "rules": [
+    {
+      "name": "Default",
+      "colors": {
+        "color": "#2b2928",
+        "defaultTextColor": "#ebdbb2"
+      }
+    },
+    {
+      "name": "Modifiers",
+      "matchers": "width > 1 or height > 1",
+      "colors": {
+        "color": "#222222",
+        "defaultTextColor": "#ebdbb2"
+      }
+    },
+    {
+      "name": "Space",
+      "matchers": "width >= 4",
+      "colors": {
+        "color": "#2b2928",
+        "defaultTextColor": "#ebdbb2"
+      }
+    },
+    {
+      "name": "Aqua Text",
+      "matchers": "label matches \"([Ee]nter|[Cc]aps.*)\"",
+      "colors": {
+        "defaultTextColor": "#8ec07c"
+      }
+    },
+    {
+      "name": "Red Text",
+      "matchers": "label matches \"([Ee]sc.*|[Ss]hift)\"",
+      "colors": {
+        "defaultTextColor": "#fb4934"
+      }
+    },
+    {
+      "name": "Purple Text",
+      "matchers": "label matches \"([Tt]ab.*|[Bb]ack.*)\"",
+      "colors": {
+        "defaultTextColor": "#d3869b"
+      }
+    },
+    {
+      "name": "Green Text",
+      "matchers": "label matches \"([Cc]trl|[Cc]ontrol|[Aa]lt.*|[Ww]in.*|[Mm]enu|[Ff]n)\"",
+      "colors": {
+        "defaultTextColor": "#b8bb26"
+      }
+    },
+    {
+      "name": "Decal Text",
+      "matchers": "decal",
+      "colors": {
+        "defaultTextColor": "#000000"
+      }
+    }
+  ]
+}

@@ -89,8 +89,8 @@
     vsc_move-editor-into-left-group (push-msg "vscode:move:editor-into-left-group")
     vsc_move-editor-into-right-group (push-msg "vscode:move:editor-into-right-group")
     
-    vsc_toggle-terminal-visibility (push-msg "TODO")
-    vsc_toggle-right-sidebar-visibility (push-msg "TODO")
+    vsc_toggle-terminal-visibility (push-msg "vscode:visibility-toggle:terminal")
+    vsc_toggle-right-sidebar-visibility (push-msg "vscode:visibility-toggle:right-sidebar")
 
 
     ;;;;;;;;;;;;;
@@ -131,7 +131,6 @@
     h_a (layer-while-held l_symbols)
     h_s (layer-while-held l_programming)
     h_d (layer-while-held l_editor-navigation)
-    ;; TODO make this conditional only on above layer
     h_v (layer-while-held l_editor-navigation_moves)
     h_ž (layer-while-held l_symbols)
     h_caps (layer-while-held l_system)
@@ -141,11 +140,11 @@
     ;; Tap-holds
     ;;;;;;;;;;;;;
     th_esc (tap-hold-release $trt $tht caps @h_caps)
-    th_a (tap-hold $trt $tht a @h_a)
-    th_s (tap-hold $trt $tht s @h_s)
-    th_d (tap-hold $trt $tht d @h_d)
-    th_v (tap-hold $trt $tht v @h_v)
-    th_ž (tap-hold $trt $tht bksl @h_ž)
+    th_a (tap-hold-release $trt $tht a @h_a)
+    th_s (tap-hold-release $trt $tht s @h_s)
+    th_d (tap-hold-release $trt $tht d @h_d)
+    th_v (tap-hold-release $trt $tht v @h_v)
+    th_ž (tap-hold-release $trt $tht bksl @h_ž)
 
     ;;;;;;;;;;;;;
     ;; Tap-dances

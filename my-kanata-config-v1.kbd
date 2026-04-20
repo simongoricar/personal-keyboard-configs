@@ -1,0 +1,177 @@
+;; This is ma custom Kanata config, designed based on a target mapping of 
+;; base + 4 layers available in the `vscode-maps` folder.
+;; It's meant to be used together with VSCode.
+(defsrc
+    esc
+    grv    1 2 3 4 5 6 7 8     9      0     min  eql  bspc
+    tab    q w e r t y u i     o      p     lbrc rbrc ret
+    caps   a s d f g h j k     l      scln  apos bksl
+    lshift z x c v b n m Comma Period Slash rshift
+    lctrl  lmeta lalt   spc  altgr rmeta menu rctrl
+)
+
+(defcfg
+    process-unmapped-keys yes
+    windows-altgr add-lctl-release
+    log-layer-changes yes
+    delegate-to-first-layer yes
+)
+
+(defvar
+    ;; long names for readability in this section
+    tap-repress-timeout 0
+    tap-hold-timeout 170
+
+    ;; some short names for reuse in the rest of the config
+    trt $tap-repress-timeout
+    tht $tap-hold-timeout
+)
+
+
+(defalias
+    ;;;;;;;;;;;;;
+    ;; TODO vscode-specific bindings to actions,
+    ;; to be kept in sync with my shortcuts.json
+    ;;;;;;;;;;;;;
+
+    ;; TODO temporary
+    vsc_cursor_up40 (push-msg "vscode:cursor:up:40")
+    vsc_cursor_down40 (push-msg "vscode:cursor:down:40")
+    vsc_focus-folder-view (push-msg "vscode:focus:fileView")
+
+    #|
+    vsc_goto-previous-problem TODO
+    vsc_goto-next-problem TODO
+
+    vsc_cursor_up40 TODO
+    vsc_cursor_down40 TODO
+    vsc_cursor_up20 TODO
+    vsc_cursor_down20 TODO
+    vsc_cursor_up10 TODO
+    vsc_cursor_down10 TODO
+
+    vsc_cursor_up TODO
+    vsc_cursor_down TODO
+    vsc_cursor_left TODO
+    vsc_cursor_right TODO
+    vsc_cursor_home TODO
+    vsc_cursor_end TODO
+
+    vsc_goto-definition TODO
+    vsc_focus-breadcrumbs TODO
+    vsc_preview-definition TODO
+    vsc_rust_open-docs TODO
+
+    vsc_toggle-fullscreen TODO
+    vsc_toggle-centered-layout TODO
+    
+    vsc_create-new-terminal TODO
+    vsc_reopen-closed-editor TODO
+    vsc_close-active-editor TODO
+
+    ;; E is short for editor, T is short for terminal
+    ;; Generally "ET" is short for "editor or terminal, depending on context".
+    vsc_unsplit-ET-into-next-group TODO
+    vsc_split-ET-into-right-group TODO
+    vsc_previous-ET-in-group TODO
+    vsc_next-ET-in-group TODO
+    vsc_focus-left-ET-group TODO
+    vsc_focus-right-ET-group TODO
+
+    vsc_focus-active-text-editor TODO
+    vsc_focus-terminal TODO
+    vsc_focus-folder-view TODO
+    vsc_toggle-maximize-editor-group TODO
+
+    vsc_move-terminal-to-editor TODO
+    vsc_move-terminal-to-panel TODO
+
+    vsc_move-editor-into-left-group TODO
+    vsc_move-editor-into-right-group TODO
+    |#
+
+
+    ;;;;;;;;;;;;;
+    ;; Holds
+    ;;;;;;;;;;;;;
+    ;; TODO h_a (layer-while-held l_symbols)
+    h_s (layer-while-held l_programming)
+    h_d (layer-while-held l_editor-navigation)
+    ;; TODO make this conditional only on above layer
+    ;; TODO h_c (layer-while-held l_editor-navigation_moves)
+    ;; TODO h_ž (layer-while-held l_symbols)
+    h_caps (layer-while-held l_system)
+
+
+    ;;;;;;;;;;;;;
+    ;; Tap-holds
+    ;;;;;;;;;;;;;
+    th_esc (tap-hold-release $trt $tht caps @h_caps)
+    ;; TODO th_a (tap-hold $trt $tht a @h_a)
+    th_s (tap-hold $trt $tht s @h_s)
+    th_d (tap-hold $trt $tht d @h_d)
+    ;; TODO th_c (tap-hold $trt $tht c @h_c)
+    ;; TODO th_ž (tap-hold $trt $tht bksl @h_ž)
+
+
+    ;;;;;;;;;;;;;
+    ;; Message pushes
+    ;;;;;;;;;;;;;
+    ext_vscode-launch (push-msg "launch:vs-code")
+)
+
+;; TEMPLATE (with no-ops)
+;; (deflayer l_template1
+;;     XX
+;;     XX   XX XX XX XX XX XX XX XX XX XX XX XX  XX
+;;     XX   XX XX XX XX XX XX XX XX XX XX XX XX   XX
+;;     XX   XX XX XX XX XX XX XX XX XX XX XX XX
+;;     XX   XX XX XX XX XX XX XX XX XX XX       XX
+;;     XX XX XX   XX   XX XX XX XX
+;; )
+;; 
+;; TEMPLATE (with fallthroughs)
+;; (deflayer l_template1
+;;     _
+;;     _   _ _ _ _ _ _ _ _ _ _ _ _  _
+;;     _   _ _ _ _ _ _ _ _ _ _ _ _   _
+;;     _   _ _ _ _ _ _ _ _ _ _ _ _
+;;     _   _ _ _ _ _ _ _ _ _ _      _
+;;     _ _ _   _   _ _ _ _
+;; )
+
+(deflayer l_base
+    @th_esc
+    _   _ _ _ _ _ _ _ _ _ _ _ _  _
+    _   _ _ _ _ _ _ _ _ _ _ _ _   _
+    esc   _ @th_s @th_d _ _ _ _ _ _ _ _ _
+    _   _ _ _ _ _ _ _ _ _ _  _
+    _ _ _   _   _ _ _ _
+)
+
+(deflayer l_system
+    _
+    _   _ _ _ _ _ _ _ _ _ _ _ _  _
+    _   _ _ _ lrld _ _ _ _ _ _ _ _   _
+    _   _ _ _ _ _ _ _ _ _ _ _ _
+    _   _ _ @ext_vscode-launch _ _ _ _ _ _ _      _
+    _ _ _   _   _ _ _ _
+)
+
+(deflayer l_programming
+    _
+    _   _ _ _ _ _ _ _ _ _ _ _ _  _
+    _   _ _ _ _ _ _ _ @vsc_cursor_up40 _ _ _ _   _
+    _   _ _ _ _ _ _ @vsc_cursor_down40 _ _ _ _ _
+    _   _ _ _ _ _ _ _ _ _ _      _
+    _ _ _   _   _ _ _ _
+)
+
+(deflayer l_editor-navigation
+    _
+    _   _ _ _ _ _ _ _ _ _ _ _ _  _
+    _   _ _ _ _ _ _ _ _ _ _ _ _   _
+    _   _ _ _ _ _ _ _ _ _ _ _ _
+    _   _ _ _ _ _ _ _ _ @vsc_focus-folder-view _      _
+    _ _ _   _   _ _ _ _
+)

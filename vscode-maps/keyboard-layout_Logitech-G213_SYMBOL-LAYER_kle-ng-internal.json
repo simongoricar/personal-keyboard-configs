@@ -669,17 +669,9 @@
       "stabRotation": 0
     },
     {
-      "color": "#2b2928",
+      "color": "#204a4c",
       "labels": [
-        "#",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "3",
-        "",
-        "^"
+        "@"
       ],
       "textColor": [],
       "textSize": [],
@@ -1034,18 +1026,20 @@
       "stabRotation": 0
     },
     {
-      "color": "#204a4c",
+      "color": "#4c4b4a",
       "labels": [
-        "@",
+        "*",
         "",
         "",
         "",
         "",
         "",
+        "Symbol layer",
         "",
         "",
         "",
-        "+"
+        "",
+        "HELD"
       ],
       "textColor": [
         "",
@@ -1054,17 +1048,25 @@
         "",
         "",
         "",
+        "#37eaf0",
         "",
         "",
         "",
-        "#607887"
+        "",
+        "#00ff08"
       ],
       "textSize": [
-        4
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
       ],
       "default": {
         "textColor": "#ebdbb2",
-        "textSize": 1
+        "textSize": 2
       },
       "x": 12,
       "y": 1.5,
@@ -1078,7 +1080,7 @@
       "rotation_y": 0,
       "rotation_angle": 0,
       "decal": false,
-      "ghost": false,
+      "ghost": true,
       "stepped": false,
       "nub": false,
       "profile": "",

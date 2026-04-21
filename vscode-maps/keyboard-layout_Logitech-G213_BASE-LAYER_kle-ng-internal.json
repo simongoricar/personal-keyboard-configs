@@ -1096,23 +1096,47 @@
       "stabRotation": 0
     },
     {
-      "color": "#2b2928",
+      "color": "#4c4b4a",
       "labels": [
-        "+",
-        "",
         "*",
         "",
         "",
         "",
-        "=",
         "",
-        "¸"
+        "",
+        "Symbol layer",
+        "",
+        "",
+        null,
+        null,
+        "<i>T-H</i>"
       ],
-      "textColor": [],
-      "textSize": [],
+      "textColor": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "#37eaf0",
+        null,
+        null,
+        null,
+        null,
+        "#b0aa99"
+      ],
+      "textSize": [
+        3,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1
+      ],
       "default": {
         "textColor": "#ebdbb2",
-        "textSize": 3
+        "textSize": 2
       },
       "x": 12,
       "y": 1.5,

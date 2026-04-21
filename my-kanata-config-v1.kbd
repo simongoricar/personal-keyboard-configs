@@ -4,9 +4,9 @@
 (defsrc
     esc
     grv    1 2 3 4 5 6 7 8     9      0     min  eql  bspc
-    tab    q w e r t y u i     o      p     lbrc rbrc ret
+    tab    q w e r t z u i     o      p     lbrc rbrc ret
     caps   a s d f g h j k     l      scln  apos bksl
-    lshift z x c v b n m Comma Period Slash rshift
+    lshift y x c v b n m Comma Period Slash rshift
     lctrl  lmeta lalt   spc  altgr rmeta menu rctrl
 )
 
@@ -100,6 +100,7 @@
     ;; Common symbols
     ;;;;;;;;;;;;;
     sym_grave-accent (unicode "`")
+    sym_dollar (unicode "$")
     sym_hashtag (unicode "#")
     sym_mult (unicode "*")
     sym_fslash (unicode "/")
@@ -136,6 +137,7 @@
     h_f (layer-while-held l_programming)
     h_v (layer-while-held l_editor-navigation_moves)
     h_đ (layer-while-held l_symbols)
+    h_* (layer-while-held l_symbols)
     h_caps (layer-while-held l_system)
 
 
@@ -147,6 +149,7 @@
     th_d (tap-hold-release $trt $tht d @h_d)
     th_f (tap-hold-release $trt $tht f @h_f)
     th_v (tap-hold-release $trt $tht v @h_v)
+    th_* (tap-hold-release $trt $tht eql @h_*)
     th_đ (tap-hold-release $trt $tht rbrc @h_đ)
 
     ;;;;;;;;;;;;;
@@ -160,6 +163,7 @@
     ;; Message pushes
     ;;;;;;;;;;;;;
     ext_vscode-launch (push-msg "launch:vs-code")
+    ext_firefox-launch (push-msg "launch:firefox")
 )
 
 ;; TEMPLATE (with no-ops)
@@ -185,9 +189,9 @@
 
 (deflayer l_base
     @th_esc
-    _   _ _ _ _ _ _ _ _ _ _ _ _  _
-    _   _ _ _ _ _ _ _ _ _ _ _ _   _
-    esc   _ @th_s @th_d @th_f _ _ _ _ _ _ _ @th_đ
+    _   _ _ _ _ _ _ _ _ _ _ _ @th_*  _
+    _   _ _ _ _ _ _ _ _ _ _ _ @th_đ   _
+    esc   _ @th_s @th_d @th_f _ _ _ _ _ _ _ _
     _   _ _ _ _ _ _ _ _ _ _  _
     _ _ _   _   _ _ _ _
 )
@@ -204,9 +208,9 @@
 (deflayer l_programming
     _
     _   XX XX XX XX XX XX XX XX XX @vsc_goto-previous-problem @vsc_goto-next-problem home  _
-    _   XX esc lctrl XX XX XX XX @vsc_cursor_up20 @vsc_cursor_up10 @vsc_cursor_up5 up end   _
+    _   XX esc lshft XX XX XX XX @vsc_cursor_up20 @vsc_cursor_up10 @vsc_cursor_up5 up end   _
     _   XX XX XX XX XX XX @vsc_cursor_down20 @vsc_cursor_down10 @vsc_cursor_down5 left down rght
-    _   lshift XX XX XX XX XX XX @vsc_goto-definition @vsc_focus-breadcrumbs @td_vsc-preview-or-open-docs      _
+    _   lctrl XX XX XX XX XX XX @vsc_goto-definition @vsc_focus-breadcrumbs @td_vsc-preview-or-open-docs      _
     _ _ _   _   _ _ _ _
 )
 
@@ -230,7 +234,7 @@
 
 (deflayer l_symbols
     _
-    _   XX XX XX S-4 XX XX XX XX XX left XX @sym_at  _
+    _   XX XX @sym_at @sym_dollar XX XX XX XX XX left XX XX  _
     _   @sym_grave-accent @sym_hashtag @sym_mult @sym_fslash @sym_and @sym_lt @sym_minus @sym_gt @sym_colon rght XX XX   _
     _   XX XX @sym_bslash @sym_eq @sym_lsb @sym_not @sym_rpar @sym_lpar @sym_scolon @sym_plus @sym_undsc XX
     _   @sym_pipe @sym_mod @sym_dquot @sym_squot @sym_rsb @sym_rcurb @sym_lcurb @sym_comma @sym_dot @sym_minus      _

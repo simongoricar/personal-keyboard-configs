@@ -115,7 +115,6 @@
       "c": "#2b2928"
     },
     "Q",
-    "W",
     {
       "c": "#4e5930",
       "ta": "\n\n\n\n#707563",
@@ -125,8 +124,8 @@
         3
       ]
     },
+    "Esc\n\n\n\nW",
     "Ctrl\n\n\n\nE",
-    "Shift\n\n\n\nR",
     {
       "c": "#2b2928",
       "ta": "",
@@ -134,8 +133,9 @@
       "f": 3,
       "fa": []
     },
+    "R",
     "T",
-    "Y\n\n\nZ",
+    "Z",
     "U",
     {
       "c": "#4e5930",
@@ -143,9 +143,9 @@
       "a": 0,
       "f": 1.5
     },
-    "Cursor up 40 lines\n\n\n\nI",
-    "Cursor up 20 lines\n\n\n\nO",
-    "Cursor up 10 lines\n\n\n\nP",
+    "Cursor up 20 lines\n\n\n\nI",
+    "Cursor up 10 lines\n\n\n\nO",
+    "Cursor up 5 lines\n\n\n\nP",
     {
       "f": 3
     },
@@ -194,6 +194,8 @@
       "c": "#2b2928"
     },
     "A",
+    "S",
+    "D",
     {
       "c": "#4c4b4a",
       "ta": "\n#80de33\n\n\n\n#00ff08",
@@ -203,24 +205,18 @@
       "fa": [
         3,
         1
-      ]
+      ],
+      "n": true
     },
-    "S\nProg. layer\n\n\n\nHELD",
-    {
-      "c": "#4e5930",
-      "ta": "\n\n\n\n#707564",
-      "g": false,
-      "f": 3,
-      "fa": []
-    },
-    "Esc\n\n\n\nD",
+    "F\nProg. layer\n\n\n\nHELD",
     {
       "c": "#2b2928",
       "ta": "",
+      "g": false,
       "a": 4,
-      "n": true
+      "f": 3,
+      "fa": []
     },
-    "F",
     "G",
     "H",
     {
@@ -230,9 +226,9 @@
       "f": 1.5,
       "n": true
     },
-    "Cursor down 40 lines\n\n\n\nJ",
-    "Cursor down 20 lines\n\n\n\nK",
-    "Cursor down 10 lines\n\n\n\nL",
+    "Cursor down 20 lines\n\n\n\nJ",
+    "Cursor down 10 lines\n\n\n\nK",
+    "Cursor down 5 lines\n\n\n\nL",
     {
       "f": 3
     },
@@ -256,9 +252,16 @@
     },
     "Shift",
     {
-      "c": "#2b2928"
+      "c": "#4e5930",
+      "ta": "\n\n\n\n#707564",
+      "a": 0
     },
-    "Z\n\n\nY",
+    "Shift\n\n\n\nY",
+    {
+      "c": "#2b2928",
+      "ta": "",
+      "a": 4
+    },
     "X",
     "C",
     "V\n\n\n@",

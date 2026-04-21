@@ -13,8 +13,9 @@
 (defcfg
     process-unmapped-keys yes
     windows-altgr add-lctl-release
-    log-layer-changes yes
+    log-layer-changes no
     delegate-to-first-layer yes
+    concurrent-tap-hold yes
 )
 
 (defvar
@@ -48,6 +49,8 @@
     vsc_cursor_down20 (push-msg "vscode:cursor:down:20")
     vsc_cursor_up10 (push-msg "vscode:cursor:up:10")
     vsc_cursor_down10 (push-msg "vscode:cursor:down:10")
+    vsc_cursor_up5 (push-msg "vscode:cursor:up:5")
+    vsc_cursor_down5 (push-msg "vscode:cursor:down:5")
 
     vsc_cursor_up (push-msg "vscode:cursor:up:1")
     vsc_cursor_down (push-msg "vscode:cursor:down:1")
@@ -128,11 +131,11 @@
     ;;;;;;;;;;;;;
     ;; Holds
     ;;;;;;;;;;;;;
-    h_a (layer-while-held l_symbols)
-    h_s (layer-while-held l_programming)
+    h_s (layer-while-held l_symbols)
     h_d (layer-while-held l_editor-navigation)
+    h_f (layer-while-held l_programming)
     h_v (layer-while-held l_editor-navigation_moves)
-    h_ž (layer-while-held l_symbols)
+    h_đ (layer-while-held l_symbols)
     h_caps (layer-while-held l_system)
 
 
@@ -140,16 +143,17 @@
     ;; Tap-holds
     ;;;;;;;;;;;;;
     th_esc (tap-hold-release $trt $tht caps @h_caps)
-    th_a (tap-hold-release $trt $tht a @h_a)
     th_s (tap-hold-release $trt $tht s @h_s)
     th_d (tap-hold-release $trt $tht d @h_d)
+    th_f (tap-hold-release $trt $tht f @h_f)
     th_v (tap-hold-release $trt $tht v @h_v)
-    th_ž (tap-hold-release $trt $tht bksl @h_ž)
+    th_đ (tap-hold-release $trt $tht rbrc @h_đ)
 
     ;;;;;;;;;;;;;
     ;; Tap-dances
     ;;;;;;;;;;;;;
-    td_vsc-preview-or-open-docs (tap-dance-eager $tdst_single-finger (@vsc_preview-definition @vsc_rust_open-docs))
+    ;; TODO maybe -eager?
+    td_vsc-preview-or-open-docs (tap-dance $tdst_single-finger (@vsc_preview-definition @vsc_rust_open-docs))
 
 
     ;;;;;;;;;;;;;
@@ -183,32 +187,29 @@
     @th_esc
     _   _ _ _ _ _ _ _ _ _ _ _ _  _
     _   _ _ _ _ _ _ _ _ _ _ _ _   _
-    esc   @th_a @th_s @th_d _ _ _ _ _ _ _ _ @th_ž
+    esc   _ @th_s @th_d @th_f _ _ _ _ _ _ _ @th_đ
     _   _ _ _ _ _ _ _ _ _ _  _
     _ _ _   _   _ _ _ _
 )
 
-;; DONE
 (deflayer l_system
     _
-    _   _ _ _ _ _ _ _ _ _ _ _ _  _
-    _   _ _ _ lrld _ _ _ _ _ _ _ _   _
-    _   _ _ _ _ _ _ _ _ _ _ _ _
-    _   _ _ @ext_vscode-launch _ _ _ _ _ _ _      _
+    _   XX XX XX XX XX XX XX XX XX XX XX XX  _
+    _   XX XX XX lrld XX XX XX XX XX XX XX XX   _
+    _   XX XX XX XX XX XX XX XX XX XX XX XX
+    _   XX XX @ext_vscode-launch XX XX XX XX XX XX XX      _
     _ _ _   _   _ _ _ _
 )
 
-;; DONE
 (deflayer l_programming
     _
-    _   _ _ _ _ _ _ _ _ _ @vsc_goto-previous-problem @vsc_goto-next-problem home  _
-    _   _ _ lctrl lshift _ _ _ @vsc_cursor_up40 @vsc_cursor_up20 @vsc_cursor_up10 up end   _
-    _   _ XX esc _ _ _ @vsc_cursor_down40 @vsc_cursor_down20 @vsc_cursor_down10 left down rght
-    _   _ _ _ _ _ _ _ @vsc_goto-definition @vsc_focus-breadcrumbs @td_vsc-preview-or-open-docs      _
+    _   XX XX XX XX XX XX XX XX XX @vsc_goto-previous-problem @vsc_goto-next-problem home  _
+    _   XX esc lctrl XX XX XX XX @vsc_cursor_up20 @vsc_cursor_up10 @vsc_cursor_up5 up end   _
+    _   XX XX XX XX XX XX @vsc_cursor_down20 @vsc_cursor_down10 @vsc_cursor_down5 left down rght
+    _   lshift XX XX XX XX XX XX @vsc_goto-definition @vsc_focus-breadcrumbs @td_vsc-preview-or-open-docs      _
     _ _ _   _   _ _ _ _
 )
 
-;; DONE
 (deflayer l_editor-navigation
     _
     _   _ _ _ _ _ _ _ @vsc_toggle-fullscreen @vsc_toggle-centered-layout @vsc_create-new-terminal @vsc_reopen-closed-editor @vsc_close-active-editor  _
@@ -218,7 +219,6 @@
     _ _ _   _   _ _ _ _
 )
 
-;; DONE 
 (deflayer l_editor-navigation_moves
     _
     _   _ _ _ _ _ _ _ _ _ _ _ _  _
@@ -228,12 +228,11 @@
     _ _ _   _   _ _ _ _
 )
 
-;; DONE
 (deflayer l_symbols
     _
-    _   _ _ _ S-4 _ _ _ _ _ left _ @sym_at  _
-    _   @sym_grave-accent @sym_hashtag @sym_mult @sym_fslash @sym_and @sym_lt @sym_minus @sym_gt @sym_colon rght _ _   _
-    _   XX _ @sym_bslash @sym_eq @sym_lsb @sym_not @sym_rpar @sym_lpar @sym_scolon @sym_plus @sym_undsc XX
+    _   XX XX XX S-4 XX XX XX XX XX left XX @sym_at  _
+    _   @sym_grave-accent @sym_hashtag @sym_mult @sym_fslash @sym_and @sym_lt @sym_minus @sym_gt @sym_colon rght XX XX   _
+    _   XX XX @sym_bslash @sym_eq @sym_lsb @sym_not @sym_rpar @sym_lpar @sym_scolon @sym_plus @sym_undsc XX
     _   @sym_pipe @sym_mod @sym_dquot @sym_squot @sym_rsb @sym_rcurb @sym_lcurb @sym_comma @sym_dot @sym_minus      _
     _ _ _   _   _ _ _ _
 )

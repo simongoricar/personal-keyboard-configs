@@ -1813,23 +1813,47 @@
       "stabRotation": 0
     },
     {
-      "color": "#2b2928",
+      "color": "#4c4b4a",
       "labels": [
-        "}",
-        "",
         "Đ",
         "",
         "",
         "",
-        "]",
         "",
-        "×"
+        "",
+        "Symbol layer",
+        "",
+        "",
+        "",
+        "",
+        "<i>T-H</i>"
       ],
-      "textColor": [],
-      "textSize": [],
+      "textColor": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "#37eaf0",
+        "",
+        "",
+        "",
+        "",
+        "#b0aa99"
+      ],
+      "textSize": [
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
       "default": {
         "textColor": "#ebdbb2",
-        "textSize": 3
+        "textSize": 2
       },
       "x": 12.5,
       "y": 2.5,
@@ -2169,49 +2193,15 @@
       "stabRotation": 0
     },
     {
-      "color": "#4c4b4a",
+      "color": "#2b2928",
       "labels": [
-        "A",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Symbol layer",
-        "",
-        "",
-        "",
-        "",
-        "<i>T-H</i>"
+        "A"
       ],
-      "textColor": [
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "#37eaf0",
-        "",
-        "",
-        "",
-        "",
-        "#b0aa99"
-      ],
-      "textSize": [
-        3,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        0,
-        1
-      ],
+      "textColor": [],
+      "textSize": [],
       "default": {
         "textColor": "#ebdbb2",
-        "textSize": 2
+        "textSize": 3
       },
       "x": 1.75,
       "y": 3.5,
@@ -2244,7 +2234,7 @@
         "",
         "",
         "",
-        "Prog. layer",
+        "Symbol layer",
         "",
         "",
         "",
@@ -2258,7 +2248,7 @@
         "",
         "",
         "",
-        "#80de33",
+        "#37eaf0",
         "",
         "",
         "",
@@ -2370,15 +2360,49 @@
       "stabRotation": 0
     },
     {
-      "color": "#2b2928",
+      "color": "#4c4b4a",
       "labels": [
-        "F"
+        "F",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Prog. layer",
+        "",
+        "",
+        "",
+        "",
+        "<i>T-H</i>"
       ],
-      "textColor": [],
-      "textSize": [],
+      "textColor": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "#80de33",
+        "",
+        "",
+        "",
+        "",
+        "#b0aa99"
+      ],
+      "textSize": [
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
       "default": {
         "textColor": "#ebdbb2",
-        "textSize": 3
+        "textSize": 2
       },
       "x": 4.75,
       "y": 3.5,
@@ -2570,13 +2594,7 @@
     {
       "color": "#2b2928",
       "labels": [
-        ":",
-        "",
-        "Č",
-        "",
-        "",
-        "",
-        ";"
+        "Č"
       ],
       "textColor": [],
       "textSize": [],
@@ -2609,15 +2627,7 @@
     {
       "color": "#2b2928",
       "labels": [
-        "\"",
-        "",
-        "Ć",
-        "",
-        "",
-        "",
-        "'",
-        "",
-        "ß"
+        "Ć"
       ],
       "textColor": [],
       "textSize": [],
@@ -2648,47 +2658,15 @@
       "stabRotation": 0
     },
     {
-      "color": "#4c4b4a",
+      "color": "#2b2928",
       "labels": [
-        "Ž",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Symbol layer",
-        "",
-        "",
-        "",
-        "",
-        "<i>T-H</i>"
+        "Ž"
       ],
-      "textColor": [
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "#37eaf0",
-        "",
-        "",
-        "",
-        "",
-        "#b0aa99"
-      ],
-      "textSize": [
-        3,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1
-      ],
+      "textColor": [],
+      "textSize": [],
       "default": {
         "textColor": "#ebdbb2",
-        "textSize": 2
+        "textSize": 3
       },
       "x": 12.75,
       "y": 3.5,

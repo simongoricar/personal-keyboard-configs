@@ -124,10 +124,24 @@
     "O",
     "P",
     "{\n[\nŠ\n÷",
-    "}\n]\nĐ\n×",
+    {
+      "c": "#4c4b4a",
+      "ta": "\n#37eaf0\n\n\n\n#b0aa99",
+      "a": 0,
+      "f": 2,
+      "fa": [
+        3,
+        1
+      ]
+    },
+    "Đ\nSymbol layer\n\n\n\n<i>T-H</i>",
     {
       "x": 0.25,
       "c": "#222222",
+      "ta": "",
+      "a": 4,
+      "f": 3,
+      "fa": [],
       "w": 1.25,
       "h": 2,
       "w2": 1.5,
@@ -163,42 +177,9 @@
     "Esc",
     {
       "x": 0.2,
-      "ta": "\n#37eaf0\n\n\n\n#b0aa99",
-      "a": 0,
-      "f": 2,
-      "fa": [
-        3,
-        1
-      ]
+      "c": "#2b2928"
     },
-    "A\nSymbol layer\n\n\n\n<i>T-H</i>",
-    {
-      "ta": "\n#80de33\n\n\n\n#b0aa99"
-    },
-    "S\nProg. layer\n\n\n\n<i>T-H</i>",
-    {
-      "ta": "\n#deac21\n\n\n\n#b0aa99"
-    },
-    "D\nEdit. nav. layer\n\n\n\n<i>T-H</i>",
-    {
-      "c": "#2b2928",
-      "ta": "",
-      "a": 4,
-      "f": 3,
-      "fa": [],
-      "n": true
-    },
-    "F",
-    "G",
-    "H",
-    {
-      "n": true
-    },
-    "J",
-    "K",
-    "L",
-    ":\n;\nČ",
-    "\"\n'\nĆ\nß",
+    "A",
     {
       "c": "#4c4b4a",
       "ta": "\n#37eaf0\n\n\n\n#b0aa99",
@@ -209,14 +190,36 @@
         1
       ]
     },
-    "Ž\nSymbol layer\n\n\n\n<i>T-H</i>",
+    "S\nSymbol layer\n\n\n\n<i>T-H</i>",
     {
-      "x": 4.75,
+      "ta": "\n#deac21\n\n\n\n#b0aa99"
+    },
+    "D\nEdit. nav. layer\n\n\n\n<i>T-H</i>",
+    {
+      "ta": "\n#80de33\n\n\n\n#b0aa99",
+      "n": true
+    },
+    "F\nProg. layer\n\n\n\n<i>T-H</i>",
+    {
       "c": "#2b2928",
       "ta": "",
       "a": 4,
       "f": 3,
       "fa": []
+    },
+    "G",
+    "H",
+    {
+      "n": true
+    },
+    "J",
+    "K",
+    "L",
+    "Č",
+    "Ć",
+    "Ž",
+    {
+      "x": 4.75
     },
     "4\n←",
     "5",

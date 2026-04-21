@@ -1456,15 +1456,37 @@
       "stabRotation": 0
     },
     {
-      "color": "#2b2928",
+      "color": "#4e5930",
       "labels": [
+        "Esc",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
         "W"
       ],
-      "textColor": [],
-      "textSize": [],
+      "textColor": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "#707563"
+      ],
+      "textSize": [
+        3
+      ],
       "default": {
         "textColor": "#ebdbb2",
-        "textSize": 3
+        "textSize": 1.5
       },
       "x": 2.5,
       "y": 2.5,
@@ -1544,37 +1566,15 @@
       "stabRotation": 0
     },
     {
-      "color": "#4e5930",
+      "color": "#2b2928",
       "labels": [
-        "Shift",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
         "R"
       ],
-      "textColor": [
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "#707563"
-      ],
-      "textSize": [
-        3
-      ],
+      "textColor": [],
+      "textSize": [],
       "default": {
         "textColor": "#ebdbb2",
-        "textSize": 1.5
+        "textSize": 3
       },
       "x": 4.5,
       "y": 2.5,
@@ -1634,14 +1634,6 @@
     {
       "color": "#2b2928",
       "labels": [
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
         "Z"
       ],
       "textColor": [],
@@ -1708,7 +1700,7 @@
     {
       "color": "#4e5930",
       "labels": [
-        "Cursor up 40 lines",
+        "Cursor up 20 lines",
         "",
         "",
         "",
@@ -1761,7 +1753,7 @@
     {
       "color": "#4e5930",
       "labels": [
-        "Cursor up 20 lines",
+        "Cursor up 10 lines",
         "",
         "",
         "",
@@ -1814,7 +1806,7 @@
     {
       "color": "#4e5930",
       "labels": [
-        "Cursor up 10 lines",
+        "Cursor up 5 lines",
         "",
         "",
         "",
@@ -2319,9 +2311,75 @@
       "stabRotation": 0
     },
     {
+      "color": "#2b2928",
+      "labels": [
+        "S"
+      ],
+      "textColor": [],
+      "textSize": [],
+      "default": {
+        "textColor": "#ebdbb2",
+        "textSize": 3
+      },
+      "x": 2.75,
+      "y": 3.5,
+      "width": 1,
+      "height": 1,
+      "x2": 0,
+      "y2": 0,
+      "width2": 1,
+      "height2": 1,
+      "rotation_x": 0,
+      "rotation_y": 0,
+      "rotation_angle": 0,
+      "decal": false,
+      "ghost": false,
+      "stepped": false,
+      "nub": false,
+      "profile": "",
+      "sm": "",
+      "sb": "",
+      "st": "",
+      "switchRotation": 0,
+      "stabRotation": 0
+    },
+    {
+      "color": "#2b2928",
+      "labels": [
+        "D"
+      ],
+      "textColor": [],
+      "textSize": [],
+      "default": {
+        "textColor": "#ebdbb2",
+        "textSize": 3
+      },
+      "x": 3.75,
+      "y": 3.5,
+      "width": 1,
+      "height": 1,
+      "x2": 0,
+      "y2": 0,
+      "width2": 1,
+      "height2": 1,
+      "rotation_x": 0,
+      "rotation_y": 0,
+      "rotation_angle": 0,
+      "decal": false,
+      "ghost": false,
+      "stepped": false,
+      "nub": false,
+      "profile": "",
+      "sm": "",
+      "sb": "",
+      "st": "",
+      "switchRotation": 0,
+      "stabRotation": 0
+    },
+    {
       "color": "#4c4b4a",
       "labels": [
-        "S",
+        "F",
         "",
         "",
         "",
@@ -2361,92 +2419,6 @@
         "textColor": "#ebdbb2",
         "textSize": 2
       },
-      "x": 2.75,
-      "y": 3.5,
-      "width": 1,
-      "height": 1,
-      "x2": 0,
-      "y2": 0,
-      "width2": 1,
-      "height2": 1,
-      "rotation_x": 0,
-      "rotation_y": 0,
-      "rotation_angle": 0,
-      "decal": false,
-      "ghost": true,
-      "stepped": false,
-      "nub": false,
-      "profile": "",
-      "sm": "",
-      "sb": "",
-      "st": "",
-      "switchRotation": 0,
-      "stabRotation": 0
-    },
-    {
-      "color": "#4e5930",
-      "labels": [
-        "Esc",
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        "D"
-      ],
-      "textColor": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        "#707564"
-      ],
-      "textSize": [],
-      "default": {
-        "textColor": "#ebdbb2",
-        "textSize": 3
-      },
-      "x": 3.75,
-      "y": 3.5,
-      "width": 1,
-      "height": 1,
-      "x2": 0,
-      "y2": 0,
-      "width2": 1,
-      "height2": 1,
-      "rotation_x": 0,
-      "rotation_y": 0,
-      "rotation_angle": 0,
-      "decal": false,
-      "ghost": false,
-      "stepped": false,
-      "nub": false,
-      "profile": "",
-      "sm": "",
-      "sb": "",
-      "st": "",
-      "switchRotation": 0,
-      "stabRotation": 0
-    },
-    {
-      "color": "#2b2928",
-      "labels": [
-        "F"
-      ],
-      "textColor": [],
-      "textSize": [],
-      "default": {
-        "textColor": "#ebdbb2",
-        "textSize": 3
-      },
       "x": 4.75,
       "y": 3.5,
       "width": 1,
@@ -2459,7 +2431,7 @@
       "rotation_y": 0,
       "rotation_angle": 0,
       "decal": false,
-      "ghost": false,
+      "ghost": true,
       "stepped": false,
       "nub": true,
       "profile": "",
@@ -2474,7 +2446,18 @@
       "labels": [
         "G"
       ],
-      "textColor": [],
+      "textColor": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "#707564"
+      ],
       "textSize": [],
       "default": {
         "textColor": "#ebdbb2",
@@ -2538,7 +2521,7 @@
     {
       "color": "#4e5930",
       "labels": [
-        "Cursor down 40 lines",
+        "Cursor down 20 lines",
         "",
         "",
         "",
@@ -2591,7 +2574,7 @@
     {
       "color": "#4e5930",
       "labels": [
-        "Cursor down 20 lines",
+        "Cursor down 10 lines",
         "",
         "",
         "",
@@ -2644,7 +2627,7 @@
     {
       "color": "#4e5930",
       "labels": [
-        "Cursor down 10 lines",
+        "Cursor down 5 lines",
         "",
         "",
         "",
@@ -2998,9 +2981,10 @@
       "stabRotation": 0
     },
     {
-      "color": "#2b2928",
+      "color": "#4e5930",
       "labels": [
-        "Z",
+        "Shift",
+        "",
         "",
         "",
         "",
@@ -3010,7 +2994,18 @@
         "",
         "Y"
       ],
-      "textColor": [],
+      "textColor": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "#707564"
+      ],
       "textSize": [],
       "default": {
         "textColor": "#ebdbb2",

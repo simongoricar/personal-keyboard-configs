@@ -1938,15 +1938,7 @@
     {
       "color": "#2b2928",
       "labels": [
-        "{",
-        "",
-        "Š",
-        "",
-        "",
-        "",
-        "[",
-        "",
-        "÷"
+        "Š"
       ],
       "textColor": [],
       "textSize": [],
@@ -1977,23 +1969,47 @@
       "stabRotation": 0
     },
     {
-      "color": "#2b2928",
+      "color": "#4c4b4a",
       "labels": [
-        "}",
-        "",
         "Đ",
         "",
         "",
         "",
-        "]",
         "",
-        "×"
+        "",
+        "Symbol layer",
+        "",
+        "",
+        "",
+        "",
+        "HELD"
       ],
-      "textColor": [],
-      "textSize": [],
+      "textColor": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "#37eaf0",
+        "",
+        "",
+        "",
+        "",
+        "#00ff08"
+      ],
+      "textSize": [
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
       "default": {
         "textColor": "#ebdbb2",
-        "textSize": 3
+        "textSize": 2
       },
       "x": 12.5,
       "y": 2.5,
@@ -2007,7 +2023,7 @@
       "rotation_y": 0,
       "rotation_angle": 0,
       "decal": false,
-      "ghost": false,
+      "ghost": true,
       "stepped": false,
       "nub": false,
       "profile": "",
@@ -2333,9 +2349,42 @@
       "stabRotation": 0
     },
     {
+      "color": "#2b2928",
+      "labels": [
+        "A"
+      ],
+      "textColor": [],
+      "textSize": [],
+      "default": {
+        "textColor": "#ebdbb2",
+        "textSize": 3
+      },
+      "x": 1.75,
+      "y": 3.5,
+      "width": 1,
+      "height": 1,
+      "x2": 0,
+      "y2": 0,
+      "width2": 1,
+      "height2": 1,
+      "rotation_x": 0,
+      "rotation_y": 0,
+      "rotation_angle": 0,
+      "decal": false,
+      "ghost": false,
+      "stepped": false,
+      "nub": false,
+      "profile": "",
+      "sm": "",
+      "sb": "",
+      "st": "",
+      "switchRotation": 0,
+      "stabRotation": 0
+    },
+    {
       "color": "#4c4b4a",
       "labels": [
-        "A",
+        "S",
         "",
         "",
         "",
@@ -2375,39 +2424,6 @@
         "textColor": "#ebdbb2",
         "textSize": 2
       },
-      "x": 1.75,
-      "y": 3.5,
-      "width": 1,
-      "height": 1,
-      "x2": 0,
-      "y2": 0,
-      "width2": 1,
-      "height2": 1,
-      "rotation_x": 0,
-      "rotation_y": 0,
-      "rotation_angle": 0,
-      "decal": false,
-      "ghost": true,
-      "stepped": false,
-      "nub": false,
-      "profile": "",
-      "sm": "",
-      "sb": "",
-      "st": "",
-      "switchRotation": 0,
-      "stabRotation": 0
-    },
-    {
-      "color": "#2b2928",
-      "labels": [
-        "S"
-      ],
-      "textColor": [],
-      "textSize": [],
-      "default": {
-        "textColor": "#ebdbb2",
-        "textSize": 3
-      },
       "x": 2.75,
       "y": 3.5,
       "width": 1,
@@ -2420,7 +2436,7 @@
       "rotation_y": 0,
       "rotation_angle": 0,
       "decal": false,
-      "ghost": false,
+      "ghost": true,
       "stepped": false,
       "nub": false,
       "profile": "",
@@ -2924,47 +2940,15 @@
       "stabRotation": 0
     },
     {
-      "color": "#4c4b4a",
+      "color": "#2b2928",
       "labels": [
-        "Ž",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Symbol layer",
-        "",
-        "",
-        "",
-        "",
-        "HELD"
+        "Ž"
       ],
-      "textColor": [
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "#37eaf0",
-        "",
-        "",
-        "",
-        "",
-        "#00ff08"
-      ],
-      "textSize": [
-        3,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1
-      ],
+      "textColor": [],
+      "textSize": [],
       "default": {
         "textColor": "#ebdbb2",
-        "textSize": 2
+        "textSize": 3
       },
       "x": 12.75,
       "y": 3.5,
@@ -2978,7 +2962,7 @@
       "rotation_y": 0,
       "rotation_angle": 0,
       "decal": false,
-      "ghost": true,
+      "ghost": false,
       "stepped": false,
       "nub": false,
       "profile": "",
